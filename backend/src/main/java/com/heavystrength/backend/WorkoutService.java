@@ -28,6 +28,7 @@ public class WorkoutService {
     workout.setSets(updatedWorkout.getSets());
     workout.setReps(updatedWorkout.getReps());
     workout.setWeight(updatedWorkout.getWeight());
+    workout.setWorkoutDate(updatedWorkout.getWorkoutDate());
 
     return workoutRepository.save(workout);
     }

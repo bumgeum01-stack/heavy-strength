@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import java.time.LocalDate;
 
 @Entity
 public class Workout {
@@ -16,6 +17,7 @@ public class Workout {
     private int sets;
     private int reps;
     private double weight;
+    private LocalDate workoutDate;
 
     public Long getId() {
         return id;
@@ -51,5 +53,13 @@ public class Workout {
 
     public void setWeight(double weight) {
         this.weight = weight;
+    }
+    
+    public LocalDate getWorkoutDate() {
+        return workoutDate;
+    }
+
+    public void setWorkoutDate(LocalDate workoutDate) {
+        this.workoutDate = workoutDate;
     }
 }
